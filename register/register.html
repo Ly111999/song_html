@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <a href="../home/index.html">
+        <img width="80px" height="auto" src="https://mbtskoudsalg.com/images/music-png-download-8.png" alt="logo">
+    </a>
+    <div class="nav">
+        <div class="search-container">
+            <form action="">
+                <input type="text" placeholder="Search.." name="search">
+            </form>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="../home/index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../home/index.html">
+                        BXH
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">My Song</a>
+                    <div class="dropdown-content">
+                        <a href="../mySong/mySong.html">My Song</a>
+                        <a href="../createSong/create.html">Create Song</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Account</a>
+                    <div class="dropdown-content">
+                        <a href="../login/login.html">Sign In</a>
+                        <a href="../register/register.html">Sign Up</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</header>
+<div class="container">
+    <h1>Register</h1>
+    <form action="" name="form-register">
+        <div class="form-group">
+            <input type="text" name="firstName" class="form-control" placeholder="First name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="lastName" class="form-control" placeholder="Last name">
+        </div>
+        <div class="form-group">
+            <input type="password" name="password" class="form-control" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <input type="text" name="confirmPassword" class="form-control" placeholder="Confirm password">
+        </div>
+        <div class="form-group">
+            <input type="text" name="address" class="form-control" placeholder="Address">
+        </div>
+        <div class="form-group">
+            <input type="text" name="phone" class="form-control" placeholder="Phone">
+        </div>
+        <div class="form-group">
+            <input type="text" name="avatar" class="form-control" placeholder="Avatar">
+        </div>
+        <div class="form-group">
+            <label>Gender</label>
+            <input style="color: white" type="radio" name="gender" value="1" checked> Male
+            <input type="radio" name="gender" value="0"> Female
+            <input type="radio" name="gender" value="2"> Other
+        </div>
+        <div class="form-group">
+            <input type="text" name="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <input type="date" name="birthday" class="form-control">
+        </div>
+        <div class="form-group" style="margin: 8px 180px">
+            <label>&nbsp;</label>
+            <input  type="button" name="btn-submit" value="Submit" class="btn">
+            <input  type="reset" name="btn-reset" value="Reset" class="btn">
+
+        </div>
+        <div class="already form-group">
+            Do you already have an account ? Sign in
+            <a href="../login/login.html">
+                 here
+            </a>
+        </div>
+    </form>
+</div>
+<script src="register.js"></script>
+
+</body>
+</html>
