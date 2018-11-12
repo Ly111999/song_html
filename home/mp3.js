@@ -16,7 +16,11 @@ xhttp.onreadystatechange = function () {
                 '            <div class="song-name">'+ objSong[i].name+'</div>\n' +
                 '            <div class="song-singer">'+ objSong[i].singer  +'</div>\n' +
                 '        </div>\n' +
-                '        <div class="col-2"></div>\n' +
+                '        <div class="col-2 action-btn">' +
+                '           <div onclick="GetSong(\'' + objSong[i].link + '\')"><i class="fas fa-play" title="Play" aria-hidden="true"></i></div>' +
+                '           <div><i class="fa fa-download" title="Download" aria-hidden="true"></i></div>' +
+                '           <div><i class="fa fa-share-alt" title="Share" aria-hidden="true"></i></div>' +
+                '       </div>\n' +
                 '    </div>';
             content += itemSong;
         }

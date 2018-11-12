@@ -97,6 +97,19 @@ input[type=text] {
     font-size: 17px;
     border: none;
 }
+.action-btn {
+    padding: 30px;
+}
+
+.action-btn div {
+    margin-left: 15px;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.action-btn div:hover {
+opacity: 1;
+}
 
 @media screen and (max-width: 600px) {
     .search-container {
