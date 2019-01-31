@@ -5,19 +5,34 @@
 
 header {
     width: 100%;
-    background-color: #1FC728;
+    background-color: #1C1C1C;
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 1;
 }
 
 header img {
     margin-left: 15%;
 }
 
+.action-btn {
+    padding: 30px;
+}
+
+.action-btn div {
+    margin-left: 15px;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.action-btn div:hover {
+    opacity: 1;
+}
+
 .nav {
     margin-left: -15%;
-    margin-top: -70px;
+    margin-top: -60px;
     display: flex;
 }
 
@@ -44,10 +59,6 @@ header img {
     margin-left: 5px;
 }
 
-.menu ul li a:hover {
-    color: black;
-}
-
 li.dropdown {
     display: inline-block;
 }
@@ -55,7 +66,7 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #1FC728;
+    background-color: #1C1C1C;
     min-width: 120px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -85,10 +96,15 @@ ul li a:hover:not(.active) {
     color: white;
 }
 
+.menu ul li a:hover{
+    color: #a845de;
+}
+
 .search-container {
     margin-left: 40%;
     padding-top: 11px;
 }
+
 
 input[type=text] {
     padding: 6px;
@@ -98,19 +114,6 @@ input[type=text] {
     border: none;
 }
 
-.action-btn {
-    padding: 30px;
-}
-
-.action-btn div {
-    margin-left: 15px;
-    display: inline-block;
-    opacity: 0.5;
-}
-
-.action-btn div:hover {
-    opacity: 1;
-}
 
 @media screen and (max-width: 600px) {
     .search-container {

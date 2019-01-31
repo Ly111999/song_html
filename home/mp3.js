@@ -36,3 +36,8 @@ function GetSong(srcSong) {
     var play = document.getElementById('play');
     play.src = srcSong;
 }
+
+//Khi đặt file js ở trên cùng
+// document.addEventListener('DOMContentLoaded', function () {
+//     //Nd đc thực hiện
+// });
